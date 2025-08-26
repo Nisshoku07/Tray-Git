@@ -1,0 +1,116 @@
+/* --- Estilos para o Filtro de Preço Manual (Versão Final Integrada) --- */
+
+.manual-price-filter {
+  margin-top: 15px;
+  /* FONTE PRINCIPAL DO TEMA */
+  font-family: 'Poppins', sans-serif; 
+}
+
+.manual-price-filter p {
+  margin-bottom: 10px;
+  font-size: 15px; /* Tamanho da fonte dos títulos do filtro */
+  /* PESO DA FONTE DO TEMA */
+  font-weight: 600;
+  color: #191919; /* Cor padrão de texto do seu site */
+}
+
+.price-inputs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Estilo para os inputs de MÍNIMO e MÁXIMO */
+.input-wrapper input {
+  width: 100%;
+  font-family: 'Poppins', sans-serif; /* FONTE PRINCIPAL DO TEMA */
+  
+  /* ESTILOS HERDADOS DO TEMA (theme-styles-2.css) */
+  border: 1px solid #ddd;
+  height: 45px;
+  padding: 8px 10px;
+  font-size: 14px; /* Tamanho de fonte mais comum para inputs */
+  font-weight: 400; /* Peso normal para digitação */
+  color: #333;
+  border-radius: 2px; /* Raio de borda sutil usado em outros botões */
+  transition: border-color .3s;
+}
+
+.input-wrapper input:focus {
+    border-color: #191919;
+}
+
+/* Cor do texto do placeholder */
+.input-wrapper input::placeholder {
+    color: #a2a2a2;
+}
+
+
+/* --- Estilos para os botões --- */
+
+.filter-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Botão "Filtrar por valor" - Agora idêntico aos outros botões do filtro */
+#apply-price-filter {
+  /* COR PRINCIPAL DO TEMA */
+  background-color: #8C5F41; 
+  /* COR DO TEXTO DOS TÍTULOS DO FILTRO */
+  color: #eee;
+  border: none;
+  
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  /* PESO DA FONTE DO TEMA */
+  font-weight: 600; 
+  padding: 8px;
+  height: 44px; /* Altura consistente */
+  border-radius: 2px; /* Raio de borda sutil */
+  cursor: pointer;
+  text-align: center;
+  transition: opacity .3s;
+}
+
+#apply-price-filter:hover {
+    opacity: 0.85; /* Efeito hover suave */
+}
+
+/* Link "Limpar" - Estilo secundário e limpo */
+.filter-clear {
+  text-align: center;
+  font-size: 13px; /* Tamanho menor para ação secundária */
+  color: #999;
+  text-decoration: underline;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400; /* Peso normal */
+}
+
+.filter-clear:hover {
+    color: #191919; /* Escurece no hover */
+}
+
+
+/* --- Estilos para Validação e Erros --- */
+
+.price-error {
+  color: #b70000;
+  font-size: 12px;
+  margin-top: 8px;
+  font-weight: 400;
+}
+
+.input-error {
+  border-color: #b70000 !important; /* !important para garantir a sobreposição */
+}
+
+.hidden {
+  display: none;
+}
