@@ -1,0 +1,55 @@
+/* POP-UP DE ENTRADA */
+#popup-entrada {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#popup-entrada .popup {
+  background: transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Imagem como background */
+#popup-entrada .popup-img {
+  width: 400px;
+  height: 450px;
+  background-image: url('https://res.cloudinary.com/dtofcwvin/image/upload/q_auto,f_auto/v1753194744/popup_dvfagd.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px; /* opcional: borda mais suave */
+  image-rendering: auto;
+  will-change: background-image;
+}
+
+/* Botão de fechar */
+#popup-entrada .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
